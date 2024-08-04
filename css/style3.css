@@ -1,0 +1,174 @@
+@import url("header.css");
+@import url("fonts.css");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.buttons-header > a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    
+}                                 
+.buttons-header {
+display: flex;
+flex-direction: row;
+align-items: center;
+margin-right: 24px;
+gap: 12px;
+
+}
+.roboto-bold-create {
+font-family: "Roboto", sans-serif;
+font-weight: 700;
+font-style: normal;
+
+background-color: #E52C00;
+border-radius: 12px;
+padding: 4px;
+
+}
+body {
+    width: auto;
+    background-color: #332C2B;
+  
+}
+main {
+  margin-top: 30vh;
+  font-size: 1.7rem;
+
+}
+/* IMAGENS EBA */
+.search-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-left: 12px;
+    margin-bottom: 12px;
+}
+.barra {
+    width: 320px;
+    height: 32px;
+    border-radius: 12px;
+    margin-right: 32px;
+    padding-left: 8px;
+    background-image: url("../images/lupa-1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: 284px;
+}
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4,256px);
+    gap: 12px;  
+    justify-content: center;
+}
+
+figure > img {
+    width: 256px;
+    height: auto;
+
+}
+figcaption {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+
+}
+.lupa {
+    width: auto;
+    height: 32px;
+
+}
+footer {
+    width: auto;
+    height: 96px;
+  
+    position: relative;
+    top: 35vh;
+  
+    background-color: #1E1614;
+    margin-top: auto;
+
+}
+footer > p {
+margin: 12px;
+
+}
+
+/* MEDIA QUERY */
+@media screen and (max-width: 1200px) {
+    .gallery-container {
+        grid-template-columns: repeat(4,224px);
+
+    }
+    figure > img {
+        width: auto;
+        height: 224px;
+    
+    }
+
+}
+@media screen and (max-width: 1000px) {
+    .gallery-container {
+        grid-template-columns: repeat(3,224px);
+
+    }
+    figure > img {
+        width: auto;
+        height: 224px;
+    
+    }
+
+}
+@media only screen and (max-width: 600px) {
+    .gallery-container {
+        grid-template-columns: repeat(2,192px);
+
+    }
+    figure > img {
+        width: auto;
+        height: 192px;
+    
+    }
+
+}
+@media only screen and (max-width: 450px) {
+    .gallery-container {
+        grid-template-columns: repeat(2,160px);
+
+    }
+    figure > img {
+        width: auto;
+        height: 160px;
+    
+    }
+    .roboto-bold {
+        text-align: center;
+        font-size: 2rem;
+      }
+    .roboto-regular {
+    text-align: center;
+    font-size: 1rem;
+    }
+    .buttons-header {
+        margin-left: 24px;
+
+    }
+    header {
+        justify-content: center;
+        align-items: center;
+        height: 256px;
+
+    }
+    .logo {
+        width: 96px;
+        height: auto;
+
+    }
+
+}

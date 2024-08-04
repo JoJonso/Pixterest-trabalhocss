@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: auto;
+    height: 64px;
+  
+    background-color: #1E1614;
+}
+/* Cabeçalho e logo */
+.logo {
+    width: auto;
+    height: 48px;
+    margin: 12px;
+
+}
